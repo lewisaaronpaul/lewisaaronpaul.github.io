@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="title icon" type="image/png" href="./Resources/assets/images/weather.jpg">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b134c41033.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Humidity</title>
+    
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+      <a href="index.html" class="navbar-brand text-light text-uppercase font-weight-bold px-3 active"><img src="./Resources/assets/images/weather.png" alt="Weather Pic" width="30px"> Latitude</a>
+      <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#mynavbar"><span class="navbar-toggle-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown" ><a class="nav-link text-light text-uppercase font-weight-bold px-3 dropdown-toggle" data-toggle="dropdown" href="#">Plots</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+              <a class="dropdown-item" href="#">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="comparisons.html">Comparison</a></li>
+          <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold px-3" href="data.html">Data</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- temperature page -->
+    <section class="p-2 summary">
+      <div class="container-fluid">
+        <div class="row text-white">
+          <div class="col-md-7 mt-5 p-3">
+            <h2 class="mb-1 p-2 text-center">Humidity</h2>
+            <div class="hline mb-2 text-center"></div>
+            <div>
+                <img src="./Resources/assets/images/cities_hum_lat.png" class="img-fluid mr-1 img-thumbnail img-responsive w-100" alt="MaxTemp Chart">
+            </div> 
+            <p class="lead text-justify">Humidity around the world is not dependent on latitude. For the most part, in this data set taken July 25 2000, the humidity ranges from 60 to 100%.</p>
+          </div>
+          <div class="col-md-5 mt-5 p-3">
+            <h2 class="mb-1 p-2 text-center"> Visualization</h2>
+            <div class="hline mb-2 text-center"></div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6 col-sm-3">
+                  <a href="max_temp.html">
+                    <img src="./Resources/assets/images/cities_temp_lat.png" alt="Max. Temperature Chart" class="img-fluid img-responsive img-thumbnail mb-1 photo" title="Max. Temperature">
+                  </a>                  
+                </div>
+                <div class="col-md-6 col-sm-3">
+                  <a href="#">
+                    <img src="./Resources/assets/images/cities_hum_lat.png" alt="Humidity Chart" class="img-fluid img-responsive img-thumbnail  mb-1 photo" title="Humidity">
+                  </a> 
+                </div>
+                <div class="col-md-6 col-sm-3">
+                  <a href="cloudiness.html">
+                    <img src="./Resources/assets/images/cities_cloud_lat.png" alt="Cloudiness Chart" class="img-fluid img-responsive img-thumbnail  mb-1 photo" title="Cloudiness">
+                  </a>               
+                </div>
+                <div class="col-md-6 col-sm-3">
+                  <a href="wind.html">
+                    <img src="./Resources/assets/images/cities_wind_lat.png" alt="Wind Chart" class="img-fluid img-responsive img-thumbnail  mb-1 photo" title="Wind">
+                  </a>                
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end of temperature page -->
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

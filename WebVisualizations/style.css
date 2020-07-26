@@ -1,0 +1,31 @@
+/* summary */
+.summary {
+    background: rgb(124, 129, 91);
+}
+
+.hline {
+    width: auto;
+    border: #eeeeee solid;
+    margin: auto;
+}
+
+.imager {
+    width: 40%;
+    height: 50%;
+}
+/* end of summary */
+
+.photo {
+    object-fit: cover;
+    width: 100%;
+    margin: 1% 0;
+  }
+
+  /*navbar */
+  @media only screen and (max-width: 767px) {
+      nav {
+          background-color: aqua;
+      }  
+      }
+  }
+  /*end of navbar */
